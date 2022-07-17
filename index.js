@@ -1,10 +1,10 @@
 function milkfunction() {
-    var shedone =(document.getElementsByclass("shed1").value);
-    var shedtwo =(document.getElementByclass("shed2").value);
-    var shedthree =(document.getElementByclass("shed3").value);
-    var shedfour =(document.getElementByclass("shed4").value);
+    var shed1 =(document.getElementById("firstshed").value);
+    var shed2 =(document.getElementById("secondshed").value);
+    var shed3 =(document.getElementById("thirdshed").value);
+    var shed4 =(document.getElementById("forthshed").value);
   
-    if(shedone.length === 0 || shedtwo.length === 0 || shedthree.length === 0 || shedfour.length === 0) {
+    if(shed1.length === 0 || shed2.length === 0 || shed3.length === 0 || shed4.length === 0) {
       //check whether the user has typed something
   
         alert("Fill all the filds!");
@@ -12,24 +12,24 @@ function milkfunction() {
     
     else {
         //convert the strings to numbers
-        shedone= parseFloat(shedone);
-        shedtwo= parseFloat(shedtwo);
-        shedthree = parseFloat(shedthree);
-        shedthree = parseFloat(shedfour);
-        var totalmilk=shedone+shedtwo+shedthree+shedfour;
-        document.getElementByclass("hidden").style.display = 'block';
-        document.getElementByclass("shedone").innerHTML=shedone;
-        document.getElementByclass("shedtwo").innerHTML=shedtwo;
-        document.getElementByclass("shedthree").innerHTML=shedthree;
-        document.getElementByclass("shedfour").innerHTML=shedfour;
-        document.getElementByclass("totalmilk").innerHTML = totalmilk;
+        shed1 = parseFloat(shed1);
+        shed2 = parseFloat(shed2);
+        shed3 = parseFloat(shed3);
+        shed4 = parseFloat(shed4);
+        var totalmilk=shed1+shed2+shed3+shed4;
+        document.getElementById("hidden").style.display = 'block';
+        document.getElementById("shed1").innerHTML=shed1;
+        document.getElementById("shed2").innerHTML=shed2;
+        document.getElementById("shed3").innerHTML=shed3;
+        document.getElementById("shed4").innerHTML=shed4;
+        document.getElementById("totalmilk").innerHTML = totalmilk;
     }
   }
   function reset() {
       location.reload();
     }
     function projection(selling_price,time){
-     var production=(document.getElementByclass("milk").value);
+     var production=(document.getElementById("milk").value);
      if(production.length===0){
        alert("Empty fields not allowed");
      }else{
@@ -37,14 +37,14 @@ function milkfunction() {
       var weekly=45*production*7;
       var monthly=45*production*30;
       var yearly=45*production*365;
-      document.getElementByclass("hidden2").style.display = 'block';
-      document.getElementByclass("weekly").innerHTML=weekly;
-      document.getElementByclass("monthly").innerHTML=monthly;
-      document.getElementByclass("yearly").innerHTML=yearly;
+      document.getElementById("hidden2").style.display = 'block';
+      document.getElementById("weekly").innerHTML=weekly;
+      document.getElementById("monthly").innerHTML=monthly;
+      document.getElementById("yearly").innerHTML=yearly;
      }
     }
    function revenue(){
-    var total=(document.getElementByclass("total").value);
+    var total=(document.getElementById("total").value);
     if(total.length===0){
       alert("Empty fields not allowed");
     }else{
@@ -54,8 +54,8 @@ function milkfunction() {
     var days= [ 31,29,31,30,31,30,31,31,30,31,30,31];
     for (i = 0; i<months.length; i++){
       output = days[i] * incomePerDay;
-      document.getElementByclass("hidden3").style.display = 'block';
-      document.getElementByclass("hidden3").innerHTML+=("Your income for " + months[i] +  "is  Ksh  " + output + "</p>");
+      document.getElementById("hidden3").style.display = 'block';
+      document.getElementById("hidden3").innerHTML+=("Your income for " + months[i] +  "is  Ksh  " + output + "</p>");
     }
   }
    }

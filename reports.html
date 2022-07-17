@@ -21,43 +21,43 @@
             </ul>
          </div>
       </nav>
-      <div class="container">
-        <div class="daily">
-            <h2>Milk produce daily per shed</h2>
+      <div id="container">
+        <div id="dailymilk">
+            <h2>Daily milk productions</h2>
              <form>
-                SHED A : <input type="text" class="shed1" /><br>
-                SHED B: <input type="text" class="shed2" /><br>
-                SHED C : <input type="text" class="shed3" /><br>
-                SHED D: <input type="text" class="shed4" /><br>
-                <input type="button" onClick="milkfunction()" Value="Generate Daily Report" />
+                SHED A : <input type="text" id="firstshed" /><br>
+                SHED B: <input type="text" id="secondshed" /><br>
+                SHED C : <input type="text" id="thirdshed" /><br>
+                SHED D: <input type="text" id="forthshed" /><br>
+                <input type="button" onClick="milkfunction()" Value="Generate Report" />
                 <input class="button" type="button" value="Reset" onclick="reset()">
              </form>
-                <div class="hidden">
+                <div id="hidden">
                     <h3>Summary Report for production today</h3>
-                    <p>Your production in Shed A is <span id = "shedone"></span> litres per day</p>
-                    <p>Your production in Shed B is <span id = "shedtwo"></span> litres per day</p>
-                    <p>Your production in Shed C is <span id = "shedthree"></span> litres per day</p>
-                    <p>Your production in Shed D is <span id = "shedfour"></span> litres per day</p>
+                    <p>Your production in Shed A is <span id = "shed1"></span> litres per day</p>
+                    <p>Your production in Shed B is <span id = "shed2"></span> litres per day</p>
+                    <p>Your production in Shed C is <span id = "shed3"></span> litres per day</p>
+                    <p>Your production in Shed D is <span id = "shed4"></span> litres per day</p>
                     <p>The total production is <span id="totalmilk"></span> litres per day</p>
                 </div>
                 <script src="javascript.js"></script>
         </div>
-        <div class="Summary">
+        <div id="projection">
             <h2>Our Weekly, Monthly and Yearly Projections</h2>
             <p>Enter today's production below to calculate our projections</p>
             <form>
-                TODAY'S TOTAL PRODUCTION : <input type="text" class="milk" /><br>
-                <input type="button" onClick="Summary()" Value="Generate Report" />
-                <input class="button" type="button"  onclick="reset()" value="Reset">
+                TODAY'S TOTAL PRODUCTION : <input type="text" id="milk" /><br>
+                <input type="button" onClick="projection()" Value="Generate Report" />
+                <input class="button" type="button" value="Reset" onclick="reset()">
              </form>
-             <div class="hidden2">
+             <div id="hidden2">
                 <h3>Report on expected income projection</h3>
-                <p>Your weekly income will be Ksh <span class = "week"></span> </p>
-                <p>Your monthly income will be Ksh <span class = "month"></span></p>
-                <p>Your yearly income will be Ksh <span class = "year"></span></p>
+                <p>Your weekly income will be Ksh <span id = "weekly"></span> </p>
+                <p>Your monthly income will be Ksh <span id = "monthly"></span></p>
+                <p>Your yearly income will be Ksh <span id = "yearly"></span></p>
             </div>
         </div>
-        <div class="revenue">
+        <div id="yearrevenue">
             <h2>Whole Year Projection on monthly basis</h2>
             <p>Enter today's production below to calculate Whole Year  projections</p>
             <form>
@@ -65,7 +65,7 @@
                 <input type="button" onClick="revenue()" Value="Generate Report" />
                 <input class="button" type="button" value="Reset" onclick="reset()">
              </form>
-             <div class="hidden3">
+             <div id="hidden3">
                 <h3>Report on expected income projection for the whole in in monthly basis</h3>
             </div>
         </div>
