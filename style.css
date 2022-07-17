@@ -18,3 +18,24 @@
     padding: 10px 0;
     margin-right: 10px;
 }
+.topnav ul{
+    text-align: right;
+
+}
+.topnav ul li{
+    display: inline-block;
+     margin: 20px;
+     text-transform: uppercase;
+}
+.topnav>ul>li>a{
+    padding: 18px;
+    margin-right: 0;
+    text-transform: uppercase;
+    display: block;
+    color: black;
+    text-decoration: none;
+}
+.topnav>ul>li>a:hover{
+    background: rgba(8, 158, 71, 0.678);
+    color: black;
+}
