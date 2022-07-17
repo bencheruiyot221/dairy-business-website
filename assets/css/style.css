@@ -46,6 +46,16 @@
     background: rgba(8, 158, 71, 0.678);
     color: black;
 }
+.container{
+    width: 100%;
+    padding-bottom: 20px;
+}
+/* .container img{
+    border: 3px solid #ccc;
+    background: #eee;
+    margin-left: 10px;
+    padding: 15px 10px;
+} */
 .button {
     background-color: #ED661F;
     border: none;
