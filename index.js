@@ -1,8 +1,8 @@
 function milkfunction() {
-    var shed1 =(document.getElementById("firstshed").value);
-    var shed2 =(document.getElementById("secondshed").value);
-    var shed3 =(document.getElementById("thirdshed").value);
-    var shed4 =(document.getElementById("forthshed").value);
+    var shed1 =(document.getElementById("shed1").value);
+    var shed2 =(document.getElementById("shed2").value);
+    var shed3 =(document.getElementById("shed3").value);
+    var shed4 =(document.getElementById("shed4").value);
   
     if(shed1.length === 0 || shed2.length === 0 || shed3.length === 0 || shed4.length === 0) {
       //check whether the user has typed something
