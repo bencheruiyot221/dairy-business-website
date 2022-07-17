@@ -4,40 +4,17 @@
     box-sizing: border-box;
     font-family: 'Poppins',Iter;
  }
- body{
-position: relative; }
-
-/* NAVBAR STYLING STARTS */
-
-.navbar {
+ .navbar{
     display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: black;
-   }
-   /* LOGO */
-   .logo {
-    font-size: 32px;
-    font-weight: bold;
-    color: white;
-    
+    flex-direction: row;
+    height: 150px; 
+ }
+.logo{
+    float: left;
+
 }
-   /* NAVBAR MENU */
-   .menu {
-    display: flex;
-    gap: 1em;
-    font-size: 18px;
-    flex: 1;
-   }
-   .topnav a{
-    display: inline-block;
-     margin: 20px;
-     text-transform: uppercase;
-     color: white;
-
-   }
-    .topnav a.active {
-        font-weight: bolder;
-        height: 1px;
-        position: relative;}
+.topnav{
+    margin: 0 auto;
+    padding: 10px 0;
+    margin-right: 10px;
+}
