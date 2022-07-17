@@ -68,7 +68,7 @@
         width: 100%;
         min-height: 400px;
         background: black;
-        border: solid 2px white; 
+        border: solid 2px black; 
     }
     .touch{
         line-height: 2;
