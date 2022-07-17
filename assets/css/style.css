@@ -55,3 +55,50 @@
     text-decoration: none;
     display: inline-block;
     font-size: 16px;}
+    .dairy{
+        background-color: rgb(96, 112, 133);
+        height: 900px;
+        text-align: center;
+    }
+    .penda{
+        padding-top: 200px;
+
+    }
+    .footer1{
+        width: 100%;
+        min-height: 400px;
+        background: black;
+        border: solid 2px white; 
+    }
+    .touch{
+        line-height: 2;
+  font-size: 40px;
+  color: white;
+  font-weight: bolder;
+  margin-left: 500px;
+  padding-top: 50px;
+    }
+    .p15{
+        margin-left: 600px;
+        margin-top: 10px;  
+        color: white;
+        font-size: 30px; 
+    }
+    form.example input[type=text] {
+        padding: 10px;
+        font-size: 17px;
+        border: 1px solid grey;
+        float: left;
+        width: 64%;
+        background: #f1f1f1;}
+        form.example button {
+          /* float: left; */
+          width: 35%;
+          padding: 10px;
+          background: #ED661F
+          ;
+          color: white;
+          font-size: 17px;
+          border: 1px solid grey;
+          border-left: none;
+          cursor: pointer;}
