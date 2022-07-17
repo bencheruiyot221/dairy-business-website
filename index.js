@@ -5,13 +5,13 @@ function milkfunction() {
     var shed4 =(document.getElementById("forthshed").value);
   
     if(shed1.length === 0 || shed2.length === 0 || shed3.length === 0 || shed4.length === 0) {
-      //check whether the user has typed something
+      //checking whether the user has typed something
   
         alert("Fill all the filds!");
       }
     
     else {
-        //convert the strings to numbers
+        //convertition of  strings to numbers
         shed1 = parseFloat(shed1);
         shed2 = parseFloat(shed2);
         shed3 = parseFloat(shed3);
