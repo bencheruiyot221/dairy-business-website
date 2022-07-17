@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <!-- LOGO -->
+        <div class="logo">DairyBusiness</div>
+        <!-- NAVIGATION MENU -->
+        <div class="topnav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="reports.html">Reports</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+         </div>
+      </nav>
+      <div class="container">
+        <div class="daily">
+            <h2>Milk produce daily per shed</h2>
+             <form>
+                SHED A : <input type="text" id="shed1" /><br>
+                SHED B: <input type="text" id="shed2" /><br>
+                SHED C : <input type="text" id="shed3" /><br>
+                SHED D: <input type="text" id="shed4" /><br>
+                <input type="button" onClick="milkfunction()" Value="Generate Daily Report" />
+                <input class="button" type="button" value="Reset" onclick="reset()">
+             </form>
+                <div id="hidden">
+                    <h3>Summary Report for production today</h3>
+                    <p>Your production in Shed A is <span id = "shedone"></span> litres per day</p>
+                    <p>Your production in Shed B is <span id = "shedtwo"></span> litres per day</p>
+                    <p>Your production in Shed C is <span id = "shedthree"></span> litres per day</p>
+                    <p>Your production in Shed D is <span id = "shedfour"></span> litres per day</p>
+                    <p>The total production is <span id="totalmilk"></span> litres per day</p>
+                </div>
+                <script src="javascript.js"></script>
+        </div>
+        <div id="projection">
+            <h2>Our Weekly, Monthly and Yearly Projections</h2>
+            <p>Enter today's production below to calculate our projections</p>
+            <form>
+                TODAY'S TOTAL PRODUCTION : <input type="text" id="milk" /><br>
+                <input type="button" onClick="projection()" Value="Generate Report" />
+                <input class="button" type="button" value="Reset" onclick="reset()">
+             </form>
+             <div id="hidden2">
+                <h3>Report on expected income projection</h3>
+                <p>Your weekly income will be Ksh <span id = "weekly"></span> </p>
+                <p>Your monthly income will be Ksh <span id = "monthly"></span></p>
+                <p>Your yearly income will be Ksh <span id = "yearly"></span></p>
+            </div>
+        </div>
+        <div id="yearrevenue">
+            <h2>Whole Year Projection on monthly basis</h2>
+            <p>Enter today's production below to calculate Whole Year  projections</p>
+            <form>
+                TODAY'S TOTAL PRODUCTION : <input type="text" id="total" /><br>
+                <input type="button" onClick="revenue()" Value="Generate Report" />
+                <input class="button" type="button" value="Reset" onclick="reset()">
+             </form>
+             <div id="hidden3">
+                <h3>Report on expected income projection for the whole in in monthly basis</h3>
+            </div>
+        </div>
+    </div>
+    <div class="footer1">
+        <h1 class="touch">We'd like to keep in touch</h1>
+        <p class="p15">Subscibe  to our newsletter</p> 
+        <div >
+        <form class="example" action="/action_page.php" style="margin:auto;max-width:300px">
+          <input type="text" placeholder="Enter your email address" name="search2">
+          <button type="submit">SUBSCRIBE</i></button>
+        </form>
+        </div>
+        
+      </div>
+</body>
+</html>
